@@ -15,4 +15,6 @@ def parsing(string: str) -> dict:
                   'IP': words[2],
                   'link': words[3]}
 
+    dict_words['link'] = dict_words['link'].replace('https://all_to_the_bottom.com', '')
+
     return dict_words
